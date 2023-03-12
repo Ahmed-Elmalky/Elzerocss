@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-1 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto;
+    gap: 15px 15px;
+  }
+  .grid-1 div{
+      background-color: #607d8b;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+  }
+  .grid-1 .one::before{
+    content: "Element 1";
+  }
+  .grid-1 .two::before{
+      content: "Element 2";
+  }
+  .grid-1 .three::before{
+    content: "Element 3";
+}
+.grid-1 .four::before{
+    content: "Element 4";
+}
+.grid-1 .five::before{
+    content: "Element 5";
+}
+.grid-1 .six::before{
+    content: "Element 6";
+}
+.grid-2 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto repeat(2, 1fr) auto;
+    grid-template-rows: 1fr auto;
+    gap: 15px 15px;
+}
+.grid-2 div{
+    background-color: #403f3f;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-3 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px 15px;
+}
+.grid-3 div{
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-3 .eight{
+    grid-area: 1 / 1 / 2 / 6;
+}
+.grid-3 .two{
+    grid-area: 2 / 1 / 3 / 4;
+}
+.grid-3 .three{
+    grid-area: 2 / 4 / 3 / 6;
+}
+.grid-3 .four{
+    grid-area: 3 / 1 / 4 / 3;
+}
+.grid-3 .six{
+    grid-area: 4 / 1 / 5 / 3;
+}
+.grid-3 .seven{
+    grid-area: 5 / 1 / 6 / 3;
+}
+.grid-3 .five{
+    grid-area: 3 / 3 / 6 / 6;
+}
+.grid-3 .one{
+    grid-area: 6 / 1 / 7 / 6;
+}
+.grid-4 {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: space-around;
+    align-content: space-between;
+}
+.grid-4 div{
+    background-color: #e91e63;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
